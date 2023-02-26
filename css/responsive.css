@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  /* navbar */
+  nav .nav-menu ul {
+    /* flex-direction: column; */
+    width: 40%;
+  }
+
+  
+  /* hero */
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero .content {
+    margin-left: 20px;
+  }
+  .hero-img {
+    display: none;
+  }
+}
