@@ -1,0 +1,74 @@
+.education {
+  padding: 100px;
+}
+
+/* head */
+.education .text-head {
+  color: var(--dark-blue);
+  font-family: var(--font-head);
+  font-size: 35px;
+  text-align: center;
+}
+
+/* container education */
+.education .container .text-head {
+  font-size: 60px;
+  text-align: start;
+}
+
+.education .container .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 200px;
+  width: 70%;
+}
+.education .single-education {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+.education .title-education p {
+  font-family: var(--font-head);
+  font-size: 30px;
+  margin-bottom: 10px;
+  opacity: .8;
+}
+.education .title-education span {
+  font-family: var(--font-menu);
+  font-size: 18px;
+  opacity: .7;
+}
+.education .link-education {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-size: 22px;
+  align-items: center;
+}
+.education .link-education ion-icon {
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+.education .link-education a {
+  color: var(--black);
+  font-family: var(--font-menu);
+  text-decoration: none;
+  transition: .3s;
+}
+.education .link-education a:hover {
+  color: var(--dark-blue);
+}
+.education ion-icon {
+  font-size: 30px;
+}
+.education .link-education span {
+  opacity: .5;
+}
+.education .desc-education p {
+  color: var(--black);
+  font-family: var(--font-menu);
+  font-size: 20px;
+  margin-bottom: -10px;  
+  opacity: .7;
+}

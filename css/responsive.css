@@ -1,8 +1,75 @@
-@media screen and (max-width: 768px) {
+/* notebook */
+@media screen and (max-width: 1070px ) {
+  .experience {
+    padding: 100px 50px;
+  }
+  .experience .content .box {
+    font-size: 25px;
+  }
+  .experience .content .desc p {
+    line-height: 25px;
+    margin-bottom: -10px;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 968px) {
   /* navbar */
-  nav .nav-menu ul {
-    /* flex-direction: column; */
+  nav .nav-brand a {
+    font-size: 30px;
+  }
+  .nav-menu ul {
+    width: 50%;
+  }
+
+  /* hero */
+  .hero-img img{
+    right: -150px;
+  }
+
+  /* experience  */
+  .experience .content {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience .container .text-head {
+    font-size: 50px;
+  }
+  .experience .container .content {
+    width: 100%;
+    margin: 50px 0;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 748px) {
+  /* navbar */
+  nav .nav-brand {
     width: 40%;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  nav .nav-menu ul {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--bright-purple);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    transform: translateY(-150%);
+    transition: all 1s;
+  }
+
+  nav ul.slide {
+    transform: translateY(0);
   }
 
   
@@ -11,9 +78,116 @@
     grid-template-columns: 1fr;
   }
   .hero .content {
-    margin-left: 20px;
+    width:80%;
+  }
+  .hero .hero-title {
+    font-size: 55px;
+  }
+  .hero .hero-caption {
+    font-size: 30px;
   }
   .hero-img {
     display: none;
+  }
+
+
+  /* about */
+  .about {
+    padding: 100px 10px;
+  }
+  .about .content {
+    width: 100%;
+    padding: 50px 10px;
+  }
+  .about .content span {
+    font-size: 16px;
+  }
+  .about .content .about-caption {
+    font-size: 30px;
+  }
+  .about .resume button {
+    font-size: 12px;
+    padding: 15px 30px;
+  }
+
+  /* about skills */
+  .about .skills .skill {
+    width: 90%;
+  }
+
+
+  /* experience */
+  .experience {
+    padding: 100px 20px;
+  }
+  .experience .text-head {
+    font-size: 20px;
+  }
+  .experience .content {
+    grid-template-columns: 1fr;
+  }
+  .experience .content .box {
+    padding: 30px 20px;
+    font-size: 22px;
+  }
+
+  .experience .container .text-head {
+    font-size: 40px;
+  }
+  .experience .container .content {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .experience .container .title-experience p {
+    font-size: 20px;
+    width: 250px;
+  }
+  .experience .link-experience {
+    font-size: 20px;
+    top: 20px;
+  }
+  .experience .link-experience ion-icon {
+    font-size: 20px;
+  }
+
+
+  /* visit */
+  .visit .caption {
+    font-size: 30px;
+  }
+
+
+  /* education */
+  /* experience */
+  .education {
+    padding: 100px 20px;
+  }
+  .education .text-head {
+    font-size: 20px;
+  }
+
+  .education .container .text-head {
+    font-size: 40px;
+  }
+  .education .container .content {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .education .container .title-education p {
+    font-size: 20px;
+    width: 250px;
+  }
+  .education .link-education {
+    font-size: 20px;
+    top: 20px;
+  }
+  .education .link-education ion-icon {
+    font-size: 20px;
+  }
+
+
+  /* contact */
+  .contact {
+    padding: 100px 10px;
   }
 }

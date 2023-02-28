@@ -1,0 +1,127 @@
+.experience {
+  padding: 100px;
+}
+
+/* head */
+.experience .text-head {
+  color: var(--dark-blue);
+  font-family: var(--font-head);
+  font-size: 35px;
+  text-align: center;
+}
+
+/* content */
+.experience .content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.experience .box {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  font-family: var(--font-head);
+  justify-content: center;
+  padding: 10px 50px;
+  position: relative;
+}
+.experience .box::before {
+  background-color: var(--white);
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: -14px;
+  content: '';
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+}
+.experience .box h3:nth-child(2n) {
+  opacity: .7;
+}
+.experience .box h3:last-child {
+  opacity: .3;
+}
+
+.experience .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.experience .desc p {
+  color: var(--black);
+  font-family: var(--font-menu);
+  font-size: 20px;
+  line-height: 30px;
+  opacity: .7;
+}
+
+
+
+/* container experience */
+.experience .container .text-head {
+  font-size: 60px;
+  margin-top: 150px;
+  text-align: start;
+}
+
+.experience .container .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 200px;
+  width: 70%;
+}
+.experience .single-experience {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.experience .title-experience p {
+  font-family: var(--font-head);
+  font-size: 30px;
+  margin-bottom: 10px;
+  opacity: .8;
+}
+.experience .title-experience span {
+  font-family: var(--font-menu);
+  font-size: 18px;
+  opacity: .7;
+}
+.experience .link-experience {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-size: 22px;
+  align-items: center;
+}
+.experience .link-experience ion-icon {
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+.experience .link-experience a {
+  color: var(--black);
+  font-family: var(--font-menu);
+  text-decoration: none;
+  transition: .3s;
+}
+.experience .link-experience a:hover {
+  color: var(--dark-blue);
+}
+.experience ion-icon {
+  font-size: 30px;
+}
+.experience .link-experience span {
+  opacity: .5;
+}
+.experience .desc-experience p {
+  color: var(--black);
+  font-family: var(--font-menu);
+  font-size: 20px;
+  margin-bottom: -10px;  
+  opacity: .7;
+}

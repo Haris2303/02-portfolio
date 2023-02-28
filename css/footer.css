@@ -1,0 +1,7 @@
+footer {
+  color: var(--white);
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 90%;
+}

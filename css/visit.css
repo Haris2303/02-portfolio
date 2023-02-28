@@ -1,0 +1,25 @@
+.visit {
+  background-color: var(--dark-blue);
+  padding-top: 100px;
+}
+.visit .content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.visit img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.visit .caption {
+  color: var(--white);
+  font-family: var(--font-menu);
+  font-size: 35px;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}

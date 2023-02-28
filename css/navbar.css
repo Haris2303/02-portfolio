@@ -1,0 +1,53 @@
+/* navbar */
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 999;
+  transition: all .5s;
+}
+
+nav.active {
+  background-color: var(--bright-purple);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* navbar-brand */
+nav .nav-brand {
+  width: 20%;
+}
+
+nav .nav-brand input:checked {
+  display: flex;
+}
+
+nav .nav-brand a {
+  color: white;
+  font-family: var(--font-brand);
+  font-size: 40px;
+  text-decoration: none;
+}
+
+/* menu humburger */
+nav .menu {
+  display: none;
+}
+
+/* navbar menu */
+.nav-menu ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  font-family: var(--font-menu);
+  font-size: 20px;
+  text-decoration: none;
+}
