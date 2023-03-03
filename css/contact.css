@@ -101,7 +101,7 @@ form button:hover {
 
 .sosmed {
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
   gap: 15px;
 }
 
@@ -110,7 +110,7 @@ form button:hover {
   width: 25px;
 }
 
-.sosmed .icon {
+.sosmed .icon a {
   align-items: center;
   background-color: rgb(54, 107, 168);
   border-radius: 50%;
@@ -123,7 +123,7 @@ form button:hover {
   width: 50px;
 }
 
-.sosmed .icon:hover {
+.sosmed .icon a:hover {
   background-color: var(--white);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   color: var(--dark-blue);

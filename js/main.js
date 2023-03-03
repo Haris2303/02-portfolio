@@ -1,3 +1,10 @@
+// aos animation
+AOS.init({
+  duration: 1000,
+  offset: 150,
+  once: true
+})
+
 // slide
 document.querySelector('nav .menu input').addEventListener('click', () => {
   document.querySelector('nav ul').classList.toggle('slide')

@@ -47,12 +47,6 @@
   background: var(--white);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-/* .hero-img {
-  width: 50vh;
-  height: 100%;
-  background-color: red;
-} */
 .hero-img img {
   position: absolute;
   top: -20px;

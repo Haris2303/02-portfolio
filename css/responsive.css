@@ -48,8 +48,26 @@
     width: 40%;
   }
 
+  /* menu humburger */
   nav .menu {
     display: flex;
+    position: relative;
+    width: 2em;
+    height: 2em;
+  }
+
+  nav .menu input {
+    cursor: pointer;
+    width: 100%;
+    z-index: 999;
+    opacity: 0;
+  }
+
+  nav .menu ion-icon {
+    color: var(--white);
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   nav .nav-menu ul {
