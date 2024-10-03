@@ -7,11 +7,11 @@ nav {
   align-items: center;
   justify-content: space-around;
   z-index: 999;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 nav.active {
-  background-color: var(--bright-purple);
+  background-color: var(--dark-blue);
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
