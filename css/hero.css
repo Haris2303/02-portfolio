@@ -39,7 +39,7 @@
   border: 1px solid var(--white);
   border-radius: 2px;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .hero button:hover {
@@ -51,6 +51,6 @@
   position: absolute;
   top: -20px;
   right: 0;
-  width: 50rem;
+  width: 40rem;
   z-index: 0;
 }
