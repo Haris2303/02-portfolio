@@ -35,7 +35,7 @@
   line-height: 55px;
 }
 
-.about .resume button {
+.about .resume a {
   color: var(--white);
   font-size: 16px;
   margin-top: 20px;
@@ -44,6 +44,7 @@
   background: var(--dark-blue);
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 
