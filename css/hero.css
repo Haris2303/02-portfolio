@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60%;
+  width: 50%;
   gap: 15px;
   z-index: 99;
 }
@@ -29,20 +29,26 @@
   font-size: 36px;
 }
 
-.hero button {
+.hero .link {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero a {
   font-size: 20px;
   color: var(--white);
   margin-top: 20px;
   padding: 15px 50px;
   background: none;
   text-transform: uppercase;
+  text-decoration: none;
   border: 1px solid var(--white);
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.5s;
 }
 
-.hero button:hover {
+.hero a:hover {
   color: var(--dark-blue);
   background: var(--white);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
