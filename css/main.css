@@ -1,18 +1,19 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Tilt+Neon&family=Tilt+Warp&display=swap'); */
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url(../fonts/Merriweather/Merriweather-Regular.ttf) format('truetype');
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'Tilt Neon';
-  src: url(../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf) format('truetype');
+  font-family: "Tilt Neon";
+  src: url(../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Tilt Warp';
-  src: url(../fonts/Tilt_Warp/TiltWarp-Regular-VariableFont_XROT\,YROT.ttf) format('truetype');
+  font-family: "Tilt Warp";
+  src: url(../fonts/Tilt_Warp/TiltWarp-Regular-VariableFont_XROT\,YROT.ttf)
+    format("truetype");
 }
-
 
 :root {
   /* color */
@@ -22,15 +23,15 @@
   --bright-blue: #c5d9e9;
   --bright-green: #7de295;
   --bright-purple: rgb(77, 95, 171);
-  
+
   /* font */
-  --font-brand: 'Tilt Warp';
-  --font-menu: 'Tilt Neon';
-  --font-head: 'Merriweather'
+  --font-brand: "Tilt Warp";
+  --font-menu: "Tilt Neon";
+  --font-head: "Merriweather";
 }
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   position: relative;

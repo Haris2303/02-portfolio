@@ -61,7 +61,7 @@ form button {
   font-size: 20px;
   padding: 15px 30px;
   text-transform: uppercase;
-  transition: all .5s;
+  transition: all 0.5s;
   width: 250px;
 }
 
@@ -71,7 +71,6 @@ form button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
 /* info */
 .info p {
   color: var(--white);
@@ -80,7 +79,8 @@ form button:hover {
   line-height: 15px;
 }
 
-.info button {
+.info .btn {
+  display: inline-block;
   font-size: 20px;
   color: var(--white);
   margin-top: 20px;
@@ -89,11 +89,12 @@ form button:hover {
   text-transform: uppercase;
   border: 1px solid var(--white);
   border-radius: 2px;
+  text-decoration: none;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.info button:hover {
+.info .btn:hover {
   color: var(--dark-blue);
   background: var(--white);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -119,7 +120,7 @@ form button:hover {
   display: flex;
   height: 50px;
   justify-content: center;
-  transition: all .5s;
+  transition: all 0.5s;
   width: 50px;
 }
 

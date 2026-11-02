@@ -47,7 +47,6 @@
   text-decoration: none;
 }
 
-
 /* skills */
 .about .skills {
   display: flex;
@@ -78,24 +77,25 @@
 
 .about .skills .skill .progress span::after {
   display: block;
-  content: '';
+  content: "";
   height: 10px;
   background-color: var(--dark-blue);
   border-radius: 50px;
 }
 /* web design */
 .about .skills .progress__1::after {
-  width: 70%;
+  width: 90%;
 }
 /* web programming */
 .about .skills .progress__2::after {
-  width: 90%;
+  width: 65%;
 }
-/* ui design */
 .about .skills .progress__3::after {
-  width: 50%;
+  width: 70%;
 }
-
+.about .skills .progress__4::after {
+  width: 80%;
+}
 
 /* deskription */
 .about .desc {
