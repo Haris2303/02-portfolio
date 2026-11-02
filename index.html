@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio v2</title>
+    <title>Haris | Web Developer Fullstack</title>
 
     <!-- my css -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/keahlian.css" />
     <link rel="stylesheet" href="css/experience.css" />
     <link rel="stylesheet" href="css/visit.css" />
     <link rel="stylesheet" href="css/education.css" />
@@ -35,19 +36,19 @@
       <div class="nav-menu">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Beranda</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">Tentang</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#experience">Pengalaman</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#education">Pendidikan</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Kontak</a>
           </li>
         </ul>
       </div>
@@ -57,73 +58,67 @@
     <!-- hero -->
     <section class="hero" id="home">
       <div class="content">
-        <div class="hero-title" data-aos="fade-up">Programming & Design</div>
+        <div class="hero-title" data-aos="fade-up">Web Developer Fullstack</div>
         <div
           class="hero-caption"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          Hi, I am Haris, focusing on creating emotional experiences.
+          Halo, saya Haris. Saya membangun aplikasi web dan mobile yang dipakai
+          langsung oleh penggunanya.
         </div>
         <div class="link">
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1dW4DWyaZEwWhDgh7BNUE45oiPamKMvaH/view?usp=sharing"
             data-aos="zoom-in"
-            >SEE CV</a
-          >
-          <a
-            target="_blank"
-            href="https://drive.google.com/file/d/1x1eeYfvBOsf_hnPCmSxPEx8dghGrgyGj/view?usp=sharing"
-            data-aos="zoom-in"
-            >SEE LETTER</a
+            >LIHAT CV</a
           >
         </div>
       </div>
       <div class="hero-img">
-        <img src="img/hero.png" alt="hero image" />
+        <img src="img/hero.webp" alt="hero image" />
       </div>
     </section>
     <!-- end hero -->
 
-    <!-- about -->
     <section class="about" id="about">
       <div class="content" data-aos="flip-right" data-aos-offset="100">
-        <span data-aos="fade-down" data-aos-delay="500">About myself</span>
+        <span data-aos="fade-down" data-aos-delay="500">Tentang Saya</span>
         <div class="about-caption" data-aos="zoom-out" data-aos-delay="500">
-          I am a creative student from Universitas Muhammadiyah Sorong in
-          Indonesia, who loves clean, simple and unique designs. I also like to
-          make silly and unique things..
+          Fresh graduate Teknik Informatika Universitas Muhammadiyah Sorong yang
+          fokus di pengembangan web fullstack. Saya suka membangun sistem yang
+          benar-benar dipakai orang, dari tampilan sampai server.
         </div>
         <div class="resume">
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1qh4ic47RYKV4hDBSsYxGSsaPfdIpqPc5/view?usp=sharing"
-            >See Presentation CV</a
+            >Lihat CV Presentasi</a
           >
         </div>
         <hr style="color: white; width: 100%; margin: 20px auto" />
         <div class="skills">
           <div class="skill" data-aos="fade-right">
-            <div class="progress-name">Web Design</div>
+            <div class="progress-name">Web Fullstack (Laravel, React)</div>
             <div class="progress">
               <span class="progress__1"></span>
             </div>
           </div>
           <div class="skill" data-aos="fade-right">
-            <div class="progress-name">Web Programming</div>
+            <div class="progress-name">Aplikasi Mobile (React Native)</div>
             <div class="progress">
               <span class="progress__2"></span>
             </div>
           </div>
           <div class="skill" data-aos="fade-right">
-            <div class="progress-name" data-aos="fade-right">Ui design</div>
+            <div class="progress-name">Backend &amp; REST API</div>
             <div class="progress">
               <span class="progress__3"></span>
             </div>
           </div>
           <div class="skill" data-aos="fade-right">
-            <div class="progress-name">copy paste</div>
+            <div class="progress-name">Hosting &amp; Deployment</div>
             <div class="progress">
               <span class="progress__4"></span>
             </div>
@@ -131,143 +126,91 @@
         </div>
         <div class="desc" data-aos="fade-up">
           <p>
-            I am an experienced web designer and developer, adept at building
-            engaging user interfaces (UI) as well as developing efficient web
-            applications. With strong coding and design skills, I am committed
-            to delivering optimized digital solutions. I also have quick skills
-            in composing design elements with high efficiency.
+            Saya membangun sistem digitalisasi untuk UKM Media Creative
+            Informations: website dan dashboard pengurus dengan Laravel,
+            aplikasi mobile anggota dengan React Native, serta chatbot AI
+            berbasis RAG. Sistemnya sudah dipakai langsung oleh anggota UKM, dan
+            saya sendiri yang men-deploy-nya di server lab kampus dengan aaPanel
+            dan Cloudflare Tunnel. Saya terbiasa memakai Git/GitHub dan pernah
+            magang sebagai web developer di Kominfo Papua Barat Daya.
           </p>
         </div>
       </div>
     </section>
-    <!-- end about -->
 
-    <!-- visit -->
-    <div class="visit">
-      <h2 style="text-align: center; color: white; font-size: 2rem">
-        Essay Of Product Promotion
-      </h2>
-      <div class="content">
-        <div class="caption" data-aos="fade-up">
-          <p>
-            <iframe
-              src="files/Haris-2439099011.pdf"
-              width="100%"
-              height="500px"
-              style="border: none"
-            >
-            </iframe>
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- end visit -->
-
-    <!-- experience -->
-    <section class="experience" id="experience">
-      <div class="text-head" data-aos="fade-down">My Expertise</div>
+    <section class="keahlian">
+      <div class="text-head" data-aos="fade-down">Keahlian Saya</div>
       <br /><br />
       <div class="content">
         <div class="box" data-aos="fade-right">
-          <h3>User Experience Design</h3>
-          <h3>Web Programming</h3>
-          <h3>Web Design</h3>
+          <h3>Web Fullstack</h3>
+          <h3>Aplikasi Mobile</h3>
+          <h3>Hosting &amp; Deployment</h3>
         </div>
         <div class="desc">
           <p data-aos="fade-up">
-            As a UX Designer, I focus on creating seamless and enjoyable digital
-            experiences for users. digital experiences that are seamless and
-            enjoyable for users. With combining user research and good design
-            principles, I design intuitive and aesthetically pleasing
-            interfaces. design intuitive and aesthetically pleasing interfaces.
+            Saya membangun antarmuka web yang responsif dengan HTML, CSS,
+            JavaScript, React, Tailwind CSS, dan Bootstrap, lalu
+            menghubungkannya ke backend Laravel, CodeIgniter, atau
+            Node.js/Express dengan database MySQL.
           </p>
           <p data-aos="fade-up">
-            As a web developer, I have expertise in building responsive and
-            high-performance websites. I combine coding skills with creativity
-            to create innovative digital solutions that meet client needs.
+            Selain web, saya mengembangkan aplikasi mobile dengan React Native
+            dan mengintegrasikan chatbot AI berbasis RAG. Saya juga bisa
+            melakukan hosting dan deployment di shared hosting/cPanel, VPS,
+            maupun server mandiri dengan aaPanel dan Cloudflare Tunnel.
           </p>
         </div>
       </div>
+    </section>
 
+    <section class="experience" id="experience">
       <div class="container">
-        <div class="text-head" data-aos="fade-right">Experience</div>
+        <div class="text-head" data-aos="fade-right">Pengalaman Kerja</div>
         <div class="content">
           <div class="single-experience" data-aos="fade-right">
             <div class="title-experience">
-              <p>User Experience Designer</p>
-              <span>Maret 2023 - Present</span>
+              <p>Intern Web Developer</p>
+              <span>Juni 2025 - Agustus 2025</span>
             </div>
             <div class="link-experience">
-              <span>at</span>
-              <a href="#"
-                >Colorlib <ion-icon name="arrow-redo-outline"></ion-icon
+              <span>di</span>
+              <a href="https://e-arsip.papuabaratdayaprov.go.id/"
+                >Kominfo Papua Barat Daya
+                <ion-icon name="arrow-redo-outline"></ion-icon
               ></a>
             </div>
             <div class="desc-experience">
               <p>
-                Design intuitive and engaging user experiences through user
-                research, wireframing, and prototyping. Focused on improving
-                usability and user satisfaction. Successfully increased
-                conversion rates by 15% on a recent project.
+                Membangun sistem e-arsip untuk instansi dari awal menggunakan
+                Laravel 12 dan Filament v4 (TALL Stack) agar CRUD dan
+                antarmukanya reaktif. Saya merancang basis data relasional untuk
+                siklus surat, mengoptimalkan kueri pencarian arsip, dan membuat
+                pelacakan status dokumen secara realtime dengan kontrol akses
+                (otorisasi) yang ketat untuk menjaga integritas data instansi.
               </p>
             </div>
           </div>
+        </div>
+        <div class="text-head" data-aos="fade-right">Proyek</div>
+        <div class="content">
           <div class="single-experience" data-aos="fade-right">
             <div class="title-experience">
-              <p>Web Design</p>
-              <span>Maret 2023 - Present</span>
+              <p>Sistem Digitalisasi UKM</p>
             </div>
             <div class="link-experience">
-              <span>at</span>
-              <a href="#"
-                >Colorlib <ion-icon name="arrow-redo-outline"></ion-icon
+              <span>untuk</span>
+              <a href="https://mci.fajar-rahardika.my.id/" target="_blank"
+                >UKM MCI UNAMIN <ion-icon name="arrow-redo-outline"></ion-icon
               ></a>
             </div>
             <div class="desc-experience">
               <p>
-                Build visually appealing and consistent designs for multiple
-                platforms. Master the principles of responsive design and
-                accessibility. Collaborate with development teams to ensure
-                seamless design implementation.
-              </p>
-            </div>
-          </div>
-          <div class="single-experience" data-aos="fade-right">
-            <div class="title-experience">
-              <p>Web Programming</p>
-              <span>Maret 2023 - Present</span>
-            </div>
-            <div class="link-experience">
-              <span>at</span>
-              <a href="#"
-                >Colorlib <ion-icon name="arrow-redo-outline"></ion-icon
-              ></a>
-            </div>
-            <div class="desc-experience">
-              <p>
-                Develop websites and web applications using HTML, CSS, and
-                JavaScript. Mastering frameworks such as React and Vue.js.
-                Optimize website performance to improve loading speed loading
-                speed.
-              </p>
-            </div>
-          </div>
-          <div class="single-experience" data-aos="fade-right">
-            <div class="title-experience">
-              <p>Responsive Design</p>
-              <span>Maret 2023 - Present</span>
-            </div>
-            <div class="link-experience">
-              <span>at</span>
-              <a href="#"
-                >Colorlib <ion-icon name="arrow-redo-outline"></ion-icon
-              ></a>
-            </div>
-            <div class="desc-experience">
-              <p>
-                Web development that allows websites to automatically adjust
-                their appearance to various screen sizes, from desktops,
-                laptops, tablets, to smartphones.
+                Membangun website publik, dashboard pengurus (absensi, keuangan,
+                pemilihan ketua, rekrutmen, materi, program kerja, dan konten),
+                serta aplikasi mobile anggota (seleksi soal per divisi, absensi,
+                pemilihan ketua, tagihan kas, materi, dan ID card). Sistem ini
+                sudah dipakai secara aktif oleh anggota UKM.
               </p>
             </div>
           </div>
@@ -284,8 +227,8 @@
         </div>
         <div class="caption" data-aos="fade-up">
           <p>
-            Every line of code and every design is a small step towards success
-            and Believe in your abilities, you can create anything.
+            Setiap baris kode adalah satu langkah kecil menuju sistem yang
+            benar-benar berguna bagi penggunanya.
           </p>
         </div>
       </div>
@@ -295,44 +238,67 @@
     <!-- education -->
     <section class="education" id="education">
       <div class="container">
-        <div class="text-head" data-aos="fade-right">Education</div>
+        <div class="text-head" data-aos="fade-right">Pendidikan</div>
         <div class="content">
           <div class="single-education" data-aos="fade-up">
             <div class="title-education">
-              <p>Universitas Muhammadiyah Sorong</p>
-              <span>September 2022 - Present</span>
+              <p>S1 Teknik Informatika</p>
+              <span>2022 - 2026</span>
             </div>
             <div class="link-education">
-              <span>at</span>
-              <a href="#"
-                >Colorlib <ion-icon name="arrow-redo-outline"></ion-icon
+              <span>di</span>
+              <a href="https://www.um-sorong.ac.id/" target="_blank"
+                >Universitas Muhammadiyah Sorong
+                <ion-icon name="arrow-redo-outline"></ion-icon
               ></a>
             </div>
             <div class="desc-education">
               <p>
-                While studying at Universitas Muhammadiyah Sorong, I have
-                prepared myself to become a programmer. The knowledge I gained
-                and the experience I gained will be very useful to achieve my
-                career goals.
+                Mempelajari pengembangan perangkat lunak, basis data, dan
+                jaringan, lalu menerapkannya lewat proyek sistem digitalisasi
+                UKM yang kini dipakai secara aktif.
               </p>
             </div>
           </div>
           <div class="single-education" data-aos="fade-up">
             <div class="title-education">
-              <p>Independent Student Exchange</p>
-              <span>September 2024 - Present</span>
+              <p>PMM Mandiri</p>
+              <span>2024</span>
             </div>
             <div class="link-education">
-              <span>at</span>
-              <a href="#"
-                >Colorlib <ion-icon name="arrow-redo-outline"></ion-icon
+              <span>di</span>
+              <a
+                href="https://uad.ac.id/en/ahmad-dahlan-university/"
+                target="_blank"
+                >Universitas Ahmad Dahlan
+                <ion-icon name="arrow-redo-outline"></ion-icon
               ></a>
             </div>
             <div class="desc-education">
               <p>
-                Studying at Ahmad Dahlan University was a very challenging yet
-                fun experience. I learned many new things, especially about
-                Professional English.
+                Mengikuti Pertukaran Mahasiswa Merdeka Mandiri di Universitas
+                Ahmad Dahlan adalah pengalaman yang menantang sekaligus
+                menyenangkan. Saya mempelajari banyak hal dan lingkungan baru.
+              </p>
+            </div>
+          </div>
+          <div class="single-education" data-aos="fade-up">
+            <div class="title-education">
+              <p>Rekayasa Perangkat Lunak</p>
+              <span>2019 - 2022</span>
+            </div>
+            <div class="link-education">
+              <span>di</span>
+              <a href="https://smkn1kotasorong.sch.id/"
+                >SMK Negeri 1 Kota Sorong
+                <ion-icon name="arrow-redo-outline"></ion-icon
+              ></a>
+            </div>
+            <div class="desc-education">
+              <p>
+                Mempelajari dasar-dasar pemrograman dan pengembangan perangkat
+                lunak yang menjadi fondasi untuk melanjutkan ke bidang web
+                development.
               </p>
             </div>
           </div>
@@ -345,47 +311,33 @@
     <section class="contact" id="contact">
       <div class="caption" data-aos="fade-down">
         <p>
-          I'm a programmer, based in FullStack. Currently a student. You can see
-          my hobbies on instagram and some photes on me too.
+          Saya web developer fullstack yang sedang mencari kesempatan magang di
+          tim engineering. Silakan kirim pesan, atau lihat kode proyek saya di
+          GitHub dan keseharian saya di Instagram.
         </p>
       </div>
       <div class="content">
         <form action="" data-aos="fade-right">
-          <h3>drop a line</h3>
-          <input type="text" placeholder="Your Name" autocomplete="off" />
+          <h3>Kirim Pesan</h3>
+          <input type="text" placeholder="Nama Anda" autocomplete="off" />
           <input type="email" placeholder="Email" autocomplete="off" />
-          <input type="text" placeholder="Subject" autocomplete="off" />
+          <input type="text" placeholder="Subjek" autocomplete="off" />
           <textarea
             cols="30"
             rows="10"
-            placeholder="Message"
+            placeholder="Pesan"
             autocomplete="off"
           ></textarea>
           <div class="button-end">
-            <button>Send</button>
+            <button>Kirim</button>
           </div>
         </form>
         <div class="info" data-aos="fade-up">
-          <h3>Contact Me</h3>
-          <p>Jln. yuksepinih, Mytic side lane</p>
-          <p>081342525252</p>
-          <p>haris@gmail.com</p>
-          <button>Download resume</button>
+          <h3>Hubungi Saya</h3>
+          <p>Kota Sorong, Papua Barat Daya</p>
+          <p>harisccf102@gmail.com</p>
+          <button>Unduh CV</button>
           <div class="sosmed">
-            <div class="icon">
-              <a href="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  class="bi bi-facebook"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  />
-                </svg>
-              </a>
-            </div>
             <div class="icon">
               <a href="https://instagram.com/haris.aja_" target="_blank">
                 <svg
@@ -421,7 +373,7 @@
       </div>
 
       <footer>
-        <p>&copy;Copyright all right reserved by. Haris</p>
+        <p>&copy; 2026 Haris. Hak cipta dilindungi.</p>
       </footer>
     </section>
 
