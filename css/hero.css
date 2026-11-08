@@ -2,61 +2,87 @@
 .hero {
   position: relative;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  color: var(--white);
-  background-color: var(--dark-blue);
-  min-height: 750px;
+  min-height: 100vh;
+  padding: 140px 0 100px;
   overflow: hidden;
 }
 
-.hero .content {
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--navy) 0%,
+    rgba(15, 27, 61, 0.88) 32%,
+    rgba(15, 27, 61, 0.35) 58%,
+    rgba(15, 27, 61, 0) 80%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
-  gap: 15px;
-  z-index: 99;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0;
+  padding-left: min(6vw, 90px);
 }
 
-.hero .hero-title {
+.hero-title {
   font-family: var(--font-head);
-  font-size: 60px;
+  font-size: clamp(42px, 6.5vw, 76px);
+  line-height: 1.15;
+  margin: 0;
+  color: var(--white);
 }
 
-.hero .hero-caption {
-  font-family: var(--font-menu);
-  font-size: 36px;
+.hero-title span {
+  color: var(--pink);
+}
+
+.hero-caption {
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-badges span {
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 .hero .link {
   display: flex;
-  gap: 1rem;
-}
-
-.hero a {
-  font-size: 20px;
-  color: var(--white);
-  margin-top: 20px;
-  padding: 15px 50px;
-  background: none;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid var(--white);
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.hero a:hover {
-  color: var(--dark-blue);
-  background: var(--white);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.hero-img img {
-  position: absolute;
-  top: -20px;
-  right: 0;
-  width: 40rem;
-  z-index: 0;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
 }

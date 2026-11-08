@@ -1,50 +1,73 @@
 .contact {
-  background-color: var(--dark-blue);
-  padding: 100px;
-}
-
-.contact .caption {
-  color: var(--white);
-  font-family: var(--font-head);
-  font-size: 35px;
-  margin: auto;
   text-align: center;
-  width: 80%;
 }
 
-.contact .content {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+.contact .eyebrow,
+.contact .section-title {
+  text-align: center;
+}
+
+.contact-lead {
+  max-width: 640px;
+  margin: 0 auto 20px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact-grid {
+  margin-top: 46px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: flex-start;
-  gap: 100px;
+  grid-template-columns: 1.2fr 0.8fr;
+  text-align: left;
+  overflow: hidden;
+}
+
+.contact-grid form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.contact-grid .info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 1px solid var(--glass-border);
 }
 
 .contact h3 {
+  margin: 0 0 20px;
   color: var(--white);
-  font-size: 25px;
-  text-transform: uppercase;
-}
-.contact form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  font-family: var(--font-head);
+  font-size: 22px;
 }
 
 .contact :where(input, textarea) {
   color: var(--white);
-  background: none;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  font-family: var(--font-menu);
-  font-size: 16px;
-  height: 50px;
-  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
   outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact :where(input, textarea)::placeholder {
+  color: var(--muted);
+}
+
+.contact :where(input, textarea):focus {
+  border-color: var(--pink);
 }
 
 .contact :where(textarea) {
-  margin-top: 15px;
+  resize: vertical;
 }
 
 .button-end {
@@ -52,80 +75,44 @@
   justify-content: flex-end;
 }
 
-form button {
-  background: none;
-  border: 1px solid var(--white);
-  border-radius: 2px;
-  cursor: pointer;
-  color: var(--white);
-  font-size: 20px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  transition: all 0.5s;
-  width: 250px;
-}
-
-form button:hover {
-  color: var(--dark-blue);
-  background: var(--white);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
 /* info */
 .info p {
-  color: var(--white);
-  font-family: var(--font-menu);
-  font-size: 18px;
-  line-height: 15px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
 }
 
 .info .btn {
-  display: inline-block;
-  font-size: 20px;
-  color: var(--white);
-  margin-top: 20px;
-  padding: 15px 30px;
-  background: none;
-  text-transform: uppercase;
-  border: 1px solid var(--white);
-  border-radius: 2px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.info .btn:hover {
-  color: var(--dark-blue);
-  background: var(--white);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-self: flex-start;
+  margin: 14px 0 10px;
 }
 
 .sosmed {
   display: flex;
-  margin-top: 30px;
-  gap: 15px;
+  gap: 14px;
+  margin-top: 10px;
 }
 
 .sosmed .icon svg {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
 
 .sosmed .icon a {
-  align-items: center;
-  background-color: rgb(54, 107, 168);
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
   display: flex;
-  height: 50px;
+  align-items: center;
   justify-content: center;
-  transition: all 0.5s;
-  width: 50px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .sosmed .icon a:hover {
-  background-color: var(--white);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  color: var(--dark-blue);
+  background: var(--pink);
+  color: var(--white);
+  box-shadow: 0 0 20px rgba(255, 61, 139, 0.4);
 }

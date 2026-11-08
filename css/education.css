@@ -1,74 +1,64 @@
-.education {
-  padding: 100px;
+.education .eyebrow,
+.education .section-title {
+  text-align: left;
 }
 
-/* head */
-.education .text-head {
-  color: var(--dark-blue);
-  font-family: var(--font-head);
-  font-size: 35px;
-  text-align: center;
+/* academic ledger */
+.edu-ledger {
+  margin-top: 50px;
+  border-top: 1px solid var(--glass-border);
 }
 
-/* container education */
-.education .container .text-head {
-  font-size: 60px;
-  text-align: start;
+.edu-entry {
+  padding: 38px 0;
+  border-bottom: 1px solid var(--glass-border);
 }
 
-.education .container .content {
+.edu-row {
   display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-left: 200px;
-  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 24px;
 }
-.education .single-education {
-  position: relative;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 50px;
-}
-.education .title-education p {
+
+.edu-degree {
+  margin: 0;
   font-family: var(--font-head);
-  font-size: 30px;
-  margin-bottom: 10px;
-  opacity: .8;
+  font-size: clamp(22px, 2.6vw, 28px);
+  color: var(--white);
 }
-.education .title-education span {
-  font-family: var(--font-menu);
-  font-size: 18px;
-  opacity: .7;
+
+.edu-year {
+  flex-shrink: 0;
+  font-family: "SFMono-Regular", Consolas, "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--pink);
+  white-space: nowrap;
 }
-.education .link-education {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  font-size: 22px;
+
+.edu-link {
+  display: flex;
+  width: fit-content;
   align-items: center;
-}
-.education .link-education ion-icon {
-  font-size: 30px;
-  margin-bottom: -5px;
-}
-.education .link-education a {
-  color: var(--black);
-  font-family: var(--font-menu);
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
   text-decoration: none;
-  transition: .3s;
+  transition: color 0.3s;
 }
-.education .link-education a:hover {
-  color: var(--dark-blue);
+
+.edu-link:hover {
+  color: var(--pink);
 }
-.education ion-icon {
-  font-size: 30px;
-}
-.education .link-education span {
-  opacity: .5;
-}
-.education .desc-education p {
-  color: var(--black);
-  font-family: var(--font-menu);
-  font-size: 20px;
-  margin-bottom: -10px;  
-  opacity: .7;
+
+.edu-desc {
+  max-width: 640px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
 }

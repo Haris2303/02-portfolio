@@ -1,25 +1,47 @@
 .visit {
-  background-color: var(--dark-blue);
-  padding-top: 100px;
-}
-.visit .content {
-  display: grid;
+  position: relative;
+  min-height: 420px;
+  display: flex;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+  overflow: hidden;
 }
 
-.visit img {
+.visit-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
+  filter: saturate(0.7) brightness(0.5);
+  z-index: 0;
 }
 
-.visit .caption {
+.visit::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 27, 61, 0.35),
+    rgba(15, 27, 61, 0.9)
+  );
+  z-index: 1;
+}
+
+.visit-quote {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.visit-quote p {
+  font-family: var(--font-head);
+  font-size: clamp(20px, 3vw, 32px);
+  line-height: 1.5;
+  max-width: 720px;
+  margin: 0 auto;
   color: var(--white);
-  font-family: var(--font-menu);
-  font-size: 35px;
-  padding: 0 20px;
-  width: 100%;
-  box-sizing: border-box;
 }

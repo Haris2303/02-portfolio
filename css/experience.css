@@ -1,230 +1,260 @@
-.experience {
-  padding: 100px;
+.experience .eyebrow,
+.experience .section-title {
+  text-align: left;
 }
 
-/* head */
-.experience .text-head {
-  color: var(--dark-blue);
-  font-family: var(--font-head);
-  font-size: 35px;
-  text-align: center;
+.project-heading {
+  margin-top: 70px;
+  text-align: right;
 }
 
-/* content */
-.experience .content {
+.project-heading .section-title {
+  text-align: right;
+}
+
+/* role panel (terminal readout) */
+.role-panel {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  gap: 60px;
+  margin: 50px 0 0;
+  text-align: left;
 }
-.experience .box {
-  background-color: var(--dark-blue);
+
+.role-main {
+  min-width: 0;
+}
+
+.role-prompt {
+  margin: 0 0 10px;
+  font-family: "SFMono-Regular", Consolas, "Courier New", monospace;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 22ch;
+  animation: typing 1.6s steps(22, end) both;
+  animation-play-state: paused;
+}
+
+.role-panel.aos-animate .role-prompt {
+  animation-play-state: running;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.prompt-symbol {
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.role-prompt-cursor {
+  color: var(--pink);
+  animation: blink 1s step-end infinite;
+}
+
+.role-title {
+  position: relative;
+  margin: 0 0 36px;
+  font-family: var(--font-head);
+  font-size: clamp(32px, 4.5vw, 54px);
   color: var(--white);
-  display: flex;
-  flex-direction: column;
-  font-size: 35px;
-  font-family: var(--font-head);
-  justify-content: center;
-  padding: 10px 50px;
-  position: relative;
-}
-.experience .box::before {
-  background-color: var(--white);
-  display: block;
-  position: absolute;
-  top: 80px;
-  right: -14px;
-  content: "";
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-}
-.experience .box h3:nth-child(2n) {
-  opacity: 0.7;
-}
-.experience .box h3:last-child {
-  opacity: 0.3;
 }
 
-.experience .desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-.experience .desc p {
-  color: var(--black);
-  font-family: var(--font-menu);
-  font-size: 20px;
-  line-height: 30px;
-  opacity: 0.7;
+.role-cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--pink);
+  font-weight: 400;
+  animation: blink 1s step-end infinite;
 }
 
-/* container experience */
-.experience .container .text-head {
-  font-size: 60px;
-  margin-top: 150px;
-  text-align: start;
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
-.experience .container .content {
+.role-meta {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  margin-left: 200px;
-  width: 70%;
+  gap: 28px;
+  padding-left: 32px;
+  border-left: 1px solid var(--glass-border);
 }
-.experience .single-experience {
-  position: relative;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+.role-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
-.experience .title-experience p {
-  font-family: var(--font-head);
-  font-size: 30px;
-  margin-bottom: 10px;
-  opacity: 0.8;
+
+.role-meta-label {
+  font-family: "SFMono-Regular", Consolas, "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pink);
 }
-.experience .title-experience span {
-  font-family: var(--font-menu);
-  font-size: 18px;
-  opacity: 0.7;
-}
-.experience .link-experience {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  font-size: 22px;
+
+.role-meta-item span:not(.role-meta-label),
+.role-meta-item a {
+  display: inline-flex;
   align-items: center;
-}
-.experience .link-experience ion-icon {
-  font-size: 30px;
-  margin-bottom: -5px;
-}
-.experience .link-experience a {
-  color: var(--black);
-  font-family: var(--font-menu);
+  gap: 6px;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
-}
-.experience .link-experience a:hover {
-  color: var(--dark-blue);
-}
-.experience ion-icon {
-  font-size: 30px;
-}
-.experience .link-experience span {
-  opacity: 0.5;
-}
-.experience .desc-experience p {
-  color: var(--black);
-  font-family: var(--font-menu);
-  font-size: 20px;
-  margin-bottom: -10px;
-  opacity: 0.7;
 }
 
-/* ===== Pengalaman, Proyek & Pendidikan: jarak & anti tumpang tindih ===== */
-
-/* jarak antar entri */
-.single-experience,
-.single-education {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 36px;
-  width: 100%;
+.role-meta-item a:hover {
+  color: var(--pink);
 }
 
-/* judul + tanggal: sejajar kalau muat, turun ke baris baru kalau tidak */
-.title-experience,
-.title-education {
+.role-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .role-prompt {
+    animation: none;
+    width: auto;
+  }
+
+  .role-prompt-cursor,
+  .role-cursor {
+    animation: none;
+  }
+}
+
+/* project index (no cards) */
+.project-index {
+  margin-top: 50px;
+  text-align: left;
+  border-top: 1px solid var(--glass-border);
+}
+
+.project-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: start;
+  gap: 40px;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.project-num {
+  font-family: var(--font-head);
+  font-size: clamp(64px, 8vw, 128px);
+  line-height: 0.8;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.25);
+  transition: all 0.4s ease;
+}
+
+.project-row:hover .project-num {
+  color: var(--pink);
+  -webkit-text-stroke: 1.5px var(--pink);
+  text-shadow: 0 0 30px rgba(255, 61, 139, 0.5);
+  transform: translateX(8px);
+}
+
+.project-title-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 4px 20px;
+  align-items: baseline;
+  gap: 10px 24px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: clamp(24px, 3vw, 34px);
+  color: var(--white);
+}
+
+.project-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--pink);
+  transition: width 0.4s ease;
+}
+
+.project-row:hover .project-title::after {
   width: 100%;
 }
 
-.title-experience p,
-.title-education p {
-  flex: 1 1 260px; /* judul panjang akan membungkus, bukan menabrak tanggal */
-  min-width: 0;
-  margin: 0;
-  line-height: 1.4;
-  overflow-wrap: anywhere;
+.project-link {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 6px;
+  color: var(--pink);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.title-experience span,
-.title-education span {
-  position: static; /* matikan posisi absolut dari CSS lama */
-  float: none;
-  flex: 0 0 auto;
-  margin: 0;
-  white-space: nowrap; /* tanggal tidak terpotong di tengah */
+.project-link ion-icon {
+  transition: transform 0.3s ease;
 }
 
-/* "di Kominfo Papua Barat Daya" */
-.link-experience,
-.link-education {
+.project-link:hover ion-icon {
+  transform: translate(3px, -3px);
+}
+
+.project-desc {
+  max-width: 640px;
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.project-stack {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 6px;
-  margin: 0;
+  gap: 0;
 }
 
-.link-experience a,
-.link-education a {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  overflow-wrap: anywhere;
+.project-stack span {
+  font-family: "SFMono-Regular", Consolas, "Courier New", monospace;
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--pink);
+  padding: 0 14px;
+  border-right: 1px solid var(--glass-border);
 }
 
-.desc-experience,
-.desc-education {
-  margin-top: 4px;
+.project-stack span:first-child {
+  padding-left: 0;
 }
 
-.desc-experience p,
-.desc-education p {
-  line-height: 1.7;
-  margin: 0 0 10px;
-}
-
-/* ===== mobile ===== */
-@media (max-width: 768px) {
-  .single-experience,
-  .single-education {
-    gap: 8px;
-    margin-bottom: 30px;
-  }
-
-  /* judul di atas, tanggal di bawahnya */
-  .title-experience,
-  .title-education {
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 4px;
-  }
-
-  .title-experience p,
-  .title-education p {
-    flex: 0 0 auto;
-    font-size: 1.05rem;
-  }
-
-  .title-experience span,
-  .title-education span {
-    font-size: 0.85rem;
-    opacity: 0.8;
-    white-space: normal;
-  }
-
-  .desc-experience p,
-  .desc-education p {
-    font-size: 0.9rem;
-  }
+.project-stack span:last-child {
+  border-right: none;
+  padding-right: 0;
 }

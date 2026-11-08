@@ -1,6 +1,21 @@
-// slide
-document.querySelector("nav .menu input").addEventListener("click", () => {
-  document.querySelector("nav ul").classList.toggle("slide");
+// mobile menu toggle
+const menuBtn = document.querySelector("nav .menu");
+const navList = document.querySelector("nav .nav-menu ul");
+
+const closeMenu = () => {
+  navList.classList.remove("slide");
+  menuBtn.classList.remove("active");
+  menuBtn.setAttribute("aria-expanded", "false");
+};
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = navList.classList.toggle("slide");
+  menuBtn.classList.toggle("active", isOpen);
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
+});
+
+navList.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
 });
 
 // add background navbar when scrolling
